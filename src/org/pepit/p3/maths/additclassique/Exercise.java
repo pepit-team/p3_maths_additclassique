@@ -176,7 +176,7 @@ public class Exercise implements org.pepit.plugin.Interface {
 	/**
 	 * The number of questions is the same for every exercises and modules.
 	 */
-	public int getNbQuestion(int selectedExercise, int selectedModule) {
+	public int getQuestionCount(int selectedExercise, int selectedModule) {
 		return (5);
 	}
 
