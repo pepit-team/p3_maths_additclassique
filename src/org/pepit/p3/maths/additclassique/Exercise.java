@@ -142,12 +142,12 @@ public class Exercise implements org.pepit.plugin.Interface {
 			break;
 		case 2:
 			nbNumbers = 2;
-			nbRows = 6;
+			nbRows = 5;
 			withCarry = true;
 			break;
 		case 3:
 			nbNumbers = 3;
-			nbRows = 5;
+			nbRows = 6;
 			break;
 		case 4:
 			nbNumbers = 3;
