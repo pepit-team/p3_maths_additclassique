@@ -1,6 +1,5 @@
 package org.pepit.p3.maths.additclassique;
 
-import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 
@@ -37,8 +36,7 @@ public class Exercise implements org.pepit.plugin.Interface {
 	/**
 	 * Layout for the exercise screen in master activity
 	 */
-	public LinearLayout getExercisePresentationLayout(Context ctx,
-			File rootResource) {
+	public LinearLayout getExercisePresentationLayout(Context ctx) {
 		LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
 				LinearLayout.LayoutParams.MATCH_PARENT,
 				LinearLayout.LayoutParams.MATCH_PARENT);
@@ -80,7 +78,7 @@ public class Exercise implements org.pepit.plugin.Interface {
 	 * Layout to explain the exercise in master activity
 	 */
 	public LinearLayout getExplanationPresentationLayout(Context ctx,
-			File rootResource, int selectedExercise) {
+			int selectedExercise) {
 		LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
 				LinearLayout.LayoutParams.MATCH_PARENT,
 				LinearLayout.LayoutParams.MATCH_PARENT);
@@ -128,8 +126,8 @@ public class Exercise implements org.pepit.plugin.Interface {
 	/**
 	 * Layout for a question set
 	 */
-	public LinearLayout getQuestionLayout(Context ctx, File rootResource,
-			int selectedExercise, int selectedModule, int numQuestion) {
+	public LinearLayout getQuestionLayout(Context ctx, int selectedExercise,
+			int selectedModule, int numQuestion) {
 		// numQuestion is not used because each question is randomly built
 		int nbNumbers = 0;
 		int nbRows = 0;

@@ -379,13 +379,11 @@ public class ExerciseView {
 				TableLayout.LayoutParams.MATCH_PARENT,
 				TableLayout.LayoutParams.WRAP_CONTENT);
 		paramsTable.gravity = Gravity.CENTER_HORIZONTAL;
-		paramsTable.setMargins(5, 5, 5, 5);
 
 		TableRow.LayoutParams paramsRow = new TableRow.LayoutParams(
 				TableRow.LayoutParams.MATCH_PARENT,
 				TableRow.LayoutParams.WRAP_CONTENT);
 		paramsRow.gravity = Gravity.CENTER_HORIZONTAL;
-		paramsRow.setMargins(5, 5, 5, 5);
 		// to have buttons with equal width
 		paramsRow.weight = 1;
 		paramsRow.width = 0;
