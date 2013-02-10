@@ -221,13 +221,12 @@ public class Exercise implements org.pepit.plugin.Interface {
 	}
 
 	/**
-	 * Return the global score
+	 * Return the number of points for one right answer.
 	 */
-	public int getScore() {
+	public int getPointsRightAnswer(int selectedExercise) {
 		// 1 right answer = 4 points
 		// because we have (5 exercises * 5 modules) / 100 max points = 4
-		int score = this.view.getModel().getNbRightAnswer() * 4;
-		return (score);
+		return (4);
 	}
 
 }
